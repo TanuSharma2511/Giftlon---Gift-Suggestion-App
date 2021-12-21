@@ -28,6 +28,7 @@ class InfoPage extends StatelessWidget {
                       'assets/bag_4.png', false, true, context),
                   _buildCard('Hand Bag', '\Rs499.99', 'assets/bag_3.png',
                       false, false, context),
+                    
                   //  _buildCard('Hand Bag', '\Rs499.99', 'assets/bag_1.png',
                   //     false, false, context),
                   // _buildCard('Hand Bag', '\Rs499.99', 'assets/bag_2.png',
