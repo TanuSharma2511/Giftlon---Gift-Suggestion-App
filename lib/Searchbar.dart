@@ -170,7 +170,7 @@ class _SearchBarState extends State<SearchBar> {
     //     for(var i in gifts) Text('hello')
     //   ]
     // ),
-    SingleChildScrollView(
+    Expanded(
       child : _loading ? Center(
         child: CircularProgressIndicator(),
       ) : SingleChildScrollView(
@@ -234,15 +234,19 @@ class _SearchBarState extends State<SearchBar> {
                                 : Icon(Icons.favorite_border,
                                     color: Color(0xff453658))
                           ])),
-                  Hero(
-                      tag: imgPath,
-                      child: Container(
-                          height: 70.0,
-                          width: 75.0,
-                          decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage(imgPath),
-                                  fit: BoxFit.contain)))),
+                  // Hero(
+                  //     tag: imgPath,
+                  //     child: Container(
+                  //         height: 70.0,
+                  //         width: 75.0,
+                  //         decoration: BoxDecoration(
+                  //             image: DecorationImage(
+                  //                 image: AssetImage(imgPath),
+                  //                 fit: BoxFit.contain)))),
+                    Image.network(
+                       imgPath,
+                fit: BoxFit.cover,
+              ),
                   SizedBox(height: 7.0),
                   Text(price,
                       style: TextStyle(

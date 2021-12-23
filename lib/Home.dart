@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/HomePage.dart';
 import 'package:myapp/Searchbar.dart';
 // import 'griddashboard.dart';
 // import 'bottomNavigation.dart';
@@ -25,7 +26,7 @@ class HomeState extends State<Home> {
 
   final tabs = [
       //Center(child : Text('Home')),
-      Center(child : Text('Home')),
+      Center(child : HomePage()),
       //Center(child : Text('Occasion')),
       Center(child : SearchBar()),
       //Center(child : Text('Category')),

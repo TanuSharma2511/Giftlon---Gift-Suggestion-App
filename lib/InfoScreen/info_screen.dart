@@ -68,6 +68,10 @@ class InfoScreenDetail extends StatelessWidget {
               fit: BoxFit.contain
               )
             ),
+              // Image.network(
+              //          assetPath,
+              //   fit: BoxFit.cover,
+              // ),
             
             SizedBox(height: 20.0),
             Center(
