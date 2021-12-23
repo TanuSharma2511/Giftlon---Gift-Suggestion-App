@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/ShareButton.dart';
 import 'package:myapp/bottomNavigation.dart';
+import 'package:share/share.dart';
 
 class InfoScreenDetail extends StatelessWidget {
   final assetPath, cookieprice, cookiename;
@@ -60,18 +62,18 @@ class InfoScreenDetail extends StatelessWidget {
                       fontSize: 30.0)),
             ),
             SizedBox(height: 35.0),
-            Hero(
-              tag: assetPath,
-              child: Image.asset(assetPath,
-              height: 200.0,
-              width: 150.0,
-              fit: BoxFit.contain
-              )
-            ),
-              // Image.network(
-              //          assetPath,
-              //   fit: BoxFit.cover,
-              // ),
+            // Hero(
+            //   tag: assetPath,
+            //   child: Image.asset(assetPath,
+            //   height: 200.0,
+            //   width: 150.0,
+            //   fit: BoxFit.contain
+            //   )
+            // ),
+              Image.network(
+                       assetPath,
+                fit: BoxFit.cover,
+              ),
             
             SizedBox(height: 20.0),
             Center(
@@ -123,7 +125,13 @@ class InfoScreenDetail extends StatelessWidget {
                   )
                 )
               )
-            )
+            ),
+             ShareButton(
+                onClicked: () async {
+                    Share.share(cookiename);
+                  }
+                
+              ),
         ]
       ),
 

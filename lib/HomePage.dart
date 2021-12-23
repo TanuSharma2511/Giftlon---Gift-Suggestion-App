@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
 
     
     return SafeArea( 
-      // child: Container(
+       child: Container(
       //    child: Padding(
       //       padding: EdgeInsets.fromLTRB(50, 40, 50, 40),
       //       child: ListView(
@@ -230,7 +230,7 @@ class _HomePageState extends State<HomePage> {
       //             ]
       //         ),
       //       ),
-      //     ),
+          ),
          );
     
   }

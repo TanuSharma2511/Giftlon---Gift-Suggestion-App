@@ -5,6 +5,7 @@ import 'package:myapp/Searchbar.dart';
 // import 'bottomNavigation.dart';
 import 'navbar.dart';
 import 'HistoryScreen.dart';
+import 'TrendingPage.dart';
 // import 'infoPage.dart';
 // import 'gender.dart';
 import 'Choices.dart';
@@ -26,14 +27,14 @@ class HomeState extends State<Home> {
 
   final tabs = [
       //Center(child : Text('Home')),
-      Center(child : HomePage()),
+      Center(child : Text('Home')),
       //Center(child : Text('Occasion')),
       Center(child : SearchBar()),
       //Center(child : Text('Category')),
       Center(child : Choices()),
       //Center(child : Text('History')),
       Center(child : HistoryScreen()),
-      Center(child : Text('Profile')),
+      Center(child : TrendingPage()),
   ];
 
   @override
